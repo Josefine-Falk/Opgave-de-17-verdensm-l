@@ -8,6 +8,7 @@ Her bruger jeg en arrow function ved min onclick function på div elementerne.
 
 ### Closure 
 Her bruger jeg closure.
+
 `const a = document.createElement('a');//Opretter et a tag
     a.href = '#'; //Giver a.href #
     a.innerText = 'Tilbage til Oversigt';//Giver a.href en title
@@ -15,15 +16,12 @@ Her bruger jeg closure.
         ListController();
     };
     div.appendChild(a);//Sætter ind på siden
-
     const img = document.createElement('img'); //Opretter nyt img element
     img.src = image;//src til billedet
     div.appendChild(img);//Sætter ind på siden
-
     const p = document.createElement('p');//Opretter nyt p element
     p.innerText = description;//Giver p en descirption 
     div.appendChild(p);//Sættter ind på siden
-
     maincontainer.appendChild(div);//Sætter div ind i min maincontainer
 };`
 
