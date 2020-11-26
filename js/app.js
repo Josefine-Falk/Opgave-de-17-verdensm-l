@@ -30,16 +30,16 @@ function ListView (id, title, byline, color, svg) { //function med de ting fra l
     span_byline.setAttribute('class', `byline`) //Giver span_byline en attribute med en class som er byline
 
     div.onclick = () => { //Onclick function
-        DetailController(id);//
+        DetailController(id);
     }
     maincontainer.appendChild(div);//Opretter den på siden
 }
 
-function DetailController(id) { //Function med Detailcontroller
-    fetch(`${url}/${id}`) //Fetch url og id
-    .then(response => response.json()) //laver det om til json format
+async function DetailController(...id) { //Function med Detailcontroller
+    let response = await fetch(`${url}/${id}`) //fetch url og id
+    .then(response => response.json()) //Laver om til json format
     .then(data => {
-        removeHTML();//Clear html
+        removeHTML();
         DetailView(data.item);
     })
 }
@@ -57,7 +57,7 @@ function DetailView({id, title, description, image, color} = data) { //Function 
     a.innerText = 'Tilbage til Oversigt';//Giver a.href en title
     a.onclick = () => { //Onlcik på a
         ListController();
-    }
+    };
     div.appendChild(a);//Sætter ind på siden
 
     const img = document.createElement('img'); //Opretter nyt img element
@@ -69,7 +69,7 @@ function DetailView({id, title, description, image, color} = data) { //Function 
     div.appendChild(p);//Sættter ind på siden
 
     maincontainer.appendChild(div);//Sætter div ind i min maincontainer
-}
+};
 
 function removeHTML() { //Clear html
     maincontainer.innerHTML = '';

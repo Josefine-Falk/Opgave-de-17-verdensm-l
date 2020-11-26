@@ -1,3 +1,100 @@
 *{
     font-family: sans-serif;
 }
+
+#overskrift{
+    text-align: center;
+}
+
+a{
+    position: absolute;
+    top: 118px;
+    left: 20px;
+}
+h1{
+    text-align: center;
+}
+img{
+    position: relative;
+    left: 120px;
+    align-items: center;
+}
+#maincontainer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 400px 400px 400px 400px 400px ;
+}
+
+svg{
+    width: 160px;
+    display: inline;
+    cursor: pointer;
+#goal1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+#goal2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+#goal3{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+#goal4{
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+#goal5{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+#goal6{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+#goal7{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+#goal8{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+#goal9{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+#goal10{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+#goal11{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+#goal12{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+#goal13{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+#goal154{
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+#goal15{
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+#goal16{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+#goal17x{
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+}
