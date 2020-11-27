@@ -6,9 +6,15 @@
   text-align: center;
 }
 
+#logo {
+  height: 100px;
+  left: 10px;
+  bottom: 50px;
+}
+
 a {
   position: absolute;
-  top: 118px;
+  top: 135px;
   left: 20px;
 }
 
@@ -18,7 +24,6 @@ h1 {
 
 img {
   position: relative;
-  left: 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -36,6 +41,7 @@ img {
 svg {
   width: 160px;
   display: inline;
+  height: 100px;
   cursor: pointer;
 }
 
@@ -156,5 +162,29 @@ svg #goal17x {
       grid-column-start: 1;
   -ms-grid-row: 5;
       grid-row-start: 5;
+}
+
+.detail {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail img {
+  width: 700px;
+  height: 400px;
 }
 /*# sourceMappingURL=main.css.map */

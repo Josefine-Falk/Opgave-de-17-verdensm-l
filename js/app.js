@@ -47,6 +47,7 @@ async function DetailController(...id) { //Function med Detailcontroller
 function DetailView({id, title, description, image, color} = data) { //Function med detailview med id, title, description, image, color
     const div = document.createElement('div');//opretter et nyt div element
     div.style.backgroundColor = `#${color}`;//Laver baggrundsfarve
+    div.setAttribute('class', `detail`)
 
     const h1 = document.createElement('h1');//Opretter en h1
     h1.innerText = title;//Title til h1
@@ -67,6 +68,7 @@ function DetailView({id, title, description, image, color} = data) { //Function 
     const p = document.createElement('p');//Opretter nyt p element
     p.innerText = description;//Giver p en descirption 
     div.appendChild(p);//Sættter ind på siden
+    p.setAttribute('id', `tekst`)
 
     maincontainer.appendChild(div);//Sætter div ind i min maincontainer
 };
