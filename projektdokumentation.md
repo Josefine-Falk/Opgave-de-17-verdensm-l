@@ -40,4 +40,4 @@ Her bruger jeg rest parameter ved min function og id.
 
 ### Destruktuering 
 Her bruger jeg destruktering.
-` const {id, title, byline, color, icon: svg} = item;`
+```js const {id, title, byline, color, icon: svg} = item;```
