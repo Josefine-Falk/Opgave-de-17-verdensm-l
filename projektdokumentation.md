@@ -29,15 +29,15 @@ Her bruger jeg closure.
 ### Rest Parameter
 Her bruger jeg rest parameter ved min function og id.
 
-`async function DetailController(...id) { //Function med Detailcontroller
+```async function DetailController(...id) { //Function med Detailcontroller
     let response = await fetch(`${url}/${id}`) //fetch url og id
     .then(response => response.json()) //Laver om til json format
     .then(data => {
         removeHTML();
         DetailView(data.item);
     })
-}`
+}```
 
 ### Destruktuering 
 Her bruger jeg destruktering.
-```js const {id, title, byline, color, icon: svg} = item;```
+```const {id, title, byline, color, icon: svg} = item;```
