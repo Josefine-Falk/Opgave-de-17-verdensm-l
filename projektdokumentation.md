@@ -4,13 +4,16 @@ Opgave om de 17 verdensmål ved brug af Arrow functions, Closure, Rest parameter
 ### Arrow Functions
 Her bruger jeg en arrow function ved min onclick function på div elementerne. 
 
-`div.onclick = () => { //Onclick function
-        DetailController(id);`
+```js
+div.onclick = () => { //Onclick function
+        DetailController(id);
+```
 
 ### Closure 
 Her bruger jeg closure.
 
-`const a = document.createElement('a');//Opretter et a tag
+```js
+const a = document.createElement('a');//Opretter et a tag
     a.href = '#'; //Giver a.href #
     a.innerText = 'Tilbage til Oversigt';//Giver a.href en title
     a.onclick = () => { //Onlcik på a
@@ -24,20 +27,25 @@ Her bruger jeg closure.
     p.innerText = description;//Giver p en descirption 
     div.appendChild(p);//Sættter ind på siden
     maincontainer.appendChild(div);//Sætter div ind i min maincontainer
-};`
+};
+```
 
 ### Rest Parameter
 Her bruger jeg rest parameter ved min function og id.
 
-```async function DetailController(...id) { //Function med Detailcontroller
+```js
+async function DetailController(...id) { //Function med Detailcontroller
     let response = await fetch(`${url}/${id}`) //fetch url og id
     .then(response => response.json()) //Laver om til json format
     .then(data => {
         removeHTML();
         DetailView(data.item);
     })
-}```
+}
+```
 
 ### Destruktuering 
 Her bruger jeg destruktering.
-```const {id, title, byline, color, icon: svg} = item;```
+```js
+const {id, title, byline, color, icon: svg} = item;
+```
